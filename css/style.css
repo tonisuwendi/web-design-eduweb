@@ -1,0 +1,1008 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	scroll-behavior: smooth;
+}
+
+a{
+	text-decoration: none;
+}
+
+section.menu{
+	width: 100%;
+	height: 70px;
+	background: #0f054c;
+	display: none;
+	position: fixed;
+	z-index: 999;
+}
+
+section.menu a h1.judul{
+	color: white;
+	font-size: 25px;
+	margin-left: 80px;
+	line-height: 70px;
+	position: absolute;
+}
+
+section.menu div.list{
+	position: absolute;
+	right: 100px;
+	line-height: 70px;
+}
+
+section.menu div.list a{
+	color: white;
+	opacity: 0.8;
+	font-size: 13px;
+	margin: 18px;
+}
+
+section.menu div.list a.daftar{
+	margin-left: 50px;
+	padding: 10px 15px;
+	border: 2px solid white;
+	border-radius: 10px;
+	opacity: 1;
+	transition: 0.2s;
+}
+
+section.menu div.list a.daftar:hover{
+	background-color: white;
+	color: #0f054c;
+}
+
+section.jumbotron{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../assets/img/bg/banner.png);
+	background-size: cover;
+	overflow: hidden;
+}
+
+section.jumbotron div.menu{
+	width: 100%;
+	height: 100px;
+}
+
+section.jumbotron div.menu a h1.judul{
+	color: white;
+	font-size: 25px;
+	margin-left: 80px;
+	line-height: 100px;
+	position: absolute;
+}
+
+section.jumbotron div.menu div.list{
+	position: absolute;
+	right: 100px;
+	line-height: 100px;
+}
+
+section.jumbotron div.menu div.list a{
+	color: white;
+	opacity: 0.8;
+	font-size: 13px;
+	margin: 18px;
+}
+
+section.jumbotron div.menu div.list a.daftar{
+	margin-left: 50px;
+	padding: 10px 15px;
+	border: 2px solid white;
+	border-radius: 10px;
+	opacity: 1;
+	transition: 0.2s;
+}
+
+section.jumbotron div.menu div.list a.daftar:hover{
+	background-color: white;
+	color: #0f054c;
+}
+
+section.jumbotron div.text{
+	width: 50%;
+	height: 100%;
+	position: relative;
+	float: left;
+	padding: 10%;
+	box-sizing: border-box;
+}
+
+section.jumbotron div.text h1{
+	font-size: 50px;
+	color: white;
+	font-family: calibri;
+}
+
+section.jumbotron div.text h2{
+	font-size: 30px;
+	color: white;
+	font-family: calibri;
+	margin-top: 10px;
+	line-height: 30px;
+}
+
+section.jumbotron div.text p{
+	font-size: 18px;
+	color: white;
+	margin-top: 20px;
+}
+
+section.jumbotron div.text a{
+	color: white;
+	padding: 10px 15px;
+	border: 2px solid white;
+	border-radius: 15px;
+	top: 25px;
+	margin-left: 30px;
+	position: relative;
+	font-size: 13px;
+	transition: 0.2s;
+}
+
+section.jumbotron div.text a:hover{
+	background-color: white;
+	color: #0f054c;
+}
+
+section.jumbotron div.gambar img{
+	position: absolute;
+	width: 650px;
+	top: 150px;
+}
+
+section.jumbotron div.gambar img.gambar{
+	animation: atasbawah 10s infinite linear;
+	transform: translate(0,0);
+	top: 160px;
+}
+
+@keyframes atasbawah{
+	0% {transform: translate(0,0);}
+	25% {transform: translate(0,-20px);}
+	50% {transform: translate(0,0);}
+	75% {transform: translate(0,20px);}
+	100% {transform: translate(0,0);}
+}
+
+section.tentang{
+	width: 100%;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+
+section.tentang div.gambar{
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 100%;
+	transform: translate(-50px,0);
+	opacity: 0;
+	transition: 1s;
+}
+
+section.tentang div.gambar img{
+	position: absolute;
+	width: 400px;
+	left: 250px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+section.tentang div.gambar img.img1{
+	animation: tentangsatu 6s infinite linear;
+}
+
+section.tentang div.gambar img.img2{
+	animation: tentangdua 7s infinite linear;
+}
+
+@keyframes tentangsatu{
+	0% {transform: translate(0,0);}
+	25% {transform: translate(0,-20px);}
+	50% {transform: translate(0,0);}
+	75% {transform: translate(0,20px);}
+	100% {transform: translate(0,0);}
+}
+
+@keyframes tentangdua{
+	0% {transform: translate(0,0);}
+	25% {transform: translate(0,20px);}
+	50% {transform: translate(0,0);}
+	75% {transform: translate(0,-20px);}
+	100% {transform: translate(0,0);}
+}
+
+section.tentang div.text{
+	width: 50%;
+	height: 100%;
+	position: relative;
+	float: right;
+	padding: 7%;
+	margin-top: 30px;
+	padding-left: 2%;
+	box-sizing: border-box;
+	transform: translate(50px,0);
+	opacity: 0;
+	transition: 1s;
+}
+
+section.tentang div.text h1{
+	font-size: 33px;
+	color: #580ce8;
+	font-family: calibri;
+}
+
+section.tentang div.text h2{
+	font-size: 25px;
+	font-family: calibri;
+	color: #ff7200;
+	margin-top: 5px;
+}
+
+section.tentang div.text p{
+	font-size: 18px;
+	font-family: calibri;
+	color: #393939;
+	width: 80%;
+	margin-top: 10px;
+}
+
+section.tentang div.text a{
+	padding: 10px 30px;
+	border: 2px solid #ff7200;
+	border-radius: 5px;
+	color: #ff7200;
+	font-size: 13px;
+	position: relative;
+	top: 20px;
+	transition: 0.3s;
+}
+
+section.tentang div.text a:hover{
+	padding-left: 20px;
+}
+
+section.tentang div.text a:hover > img{
+	transform: translate(0,0);
+}
+
+section.tentang div.text a img{
+	width: 7px;
+	position: absolute;
+	top: 11px;
+	margin-left: 5px;
+	transform: translate(10px,0);
+}
+
+section.tentang div.text a:hover{
+	background-color: #ff7200;
+	color: white;
+	box-shadow: 1px 3px 10px rgba(0,0,0,0.4);
+}
+
+section.parallax{
+	width: 100%;
+	height: 400px;
+	background-image: url(../assets/img/bg/parallax.png);
+	background-size: cover;
+	position: relative;
+	background-attachment: fixed;
+	clip-path: polygon(0 14%, 100% 0, 100% 84%, 0 100%);
+}
+
+section.parallax h1{
+	position: absolute;
+	top: 100px;
+	font-size: 30px;
+	color: white;
+	left: 0;
+	right: 0;
+	margin: auto;
+	transform: translate(0, -50px);
+	opacity: 0;
+	transition: 1s;
+}
+
+section.parallax p{
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	width: 75%;
+	line-height: 25px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 160px;
+	transform: translate(0, -50px);
+	opacity: 0;
+	transition: 1s;
+	font-family: arial;
+}
+
+section.parallax p.more{
+	top: 25px;
+	opacity: 1;
+	left: -100px;
+	transform: translate(0,0);
+}
+
+section.parallax a{
+	position: absolute;
+	top: 220px;
+	padding: 7px 20px;
+	border: 2px solid white;
+	color: white;
+	font-size: 14px;
+	transition: 0.2s;
+	opacity: 1;
+}
+
+section.parallax a:hover{
+	background-color: white;
+	color: black;
+}
+
+section.kelas{
+	width: 100%;
+	height: 550px;
+	margin-top: 40px;
+	position: relative;
+}
+
+section.kelas div.isi{
+	width: 1200px;
+	height: 100%;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+section.kelas div.isi h1.judul{
+	font-size: 30px;
+	color: #0f054c;
+	font-family: calibri;
+}
+
+section.kelas div.isi div.kotak{
+	width: 370px;
+	height: 410px;
+	background-color: white;
+	position: relative;
+	box-shadow: 1px 2px 35px rgba(0,0,0,0.2);
+	float: left;
+	transition: 0.3s;
+	margin: 15px;
+}
+
+section.kelas div.isi div.kotak:hover{
+	transform: translate(0,-5px);
+	box-shadow: 2px 5px 35px rgba(0,0,0,0.4);
+}
+
+section.kelas div.isi div.kotak div.atas{
+	width: 100%;
+	height: 200px;
+	position: relative;
+}
+
+section.kelas div.isi div.kotak img{
+	width: 200px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+section.kelas div.isi div.kotak h1{
+	font-family: calibri;
+	text-align: center;
+	width: 100%;
+	font-size: 23px;
+	color: #0f054c;
+}
+
+section.kelas div.isi div.kotak p{
+	width: 70%;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	line-height: 20px;
+	margin-top: 5px;
+}
+
+section.kelas div.isi div.kotak p a{
+	padding: 10px 20px;
+	border-radius: 20px;
+	background-color: #7736f6;
+	font-size: 13px;
+	color: white;
+	top: 10px;
+	position: relative;
+	transition: 0.2s;
+}
+
+section.kelas div.isi div.kotak p a:hover{
+	background-color: #0f054c;
+}
+
+section.harga{
+	width: 100%;
+	height: 680px;
+	position: relative;
+	background-image: url(../assets/img/bg/banner2.png);
+	background-size: cover;
+	background-position: 0 -100px
+}
+
+section.harga img{
+	position: absolute;
+	width: 100%;
+	animation: roket 7s infinite linear;
+	top: -70px;
+}
+
+@keyframes roket{
+	0% {transform: translate(0,0);}
+	25% {transform: translate(0,20px);}
+	50% {transform: translate(0,0);}
+	75% {transform: translate(0,-20px);}
+	100% {transform: translate(0,0);}
+}
+
+section.harga div.kotak{
+	width: 300px;
+	height: auto;
+	padding-bottom: 40px;
+	background-color: #f0f0f0;
+	box-shadow: 2px 4px 20px rgba(0,0,0,0.2);
+	position: relative;
+	float: left;margin: 10px;
+	top: 200px;
+	transition: 0.2s;
+	left: 20px;
+}
+
+section.harga div.kotak:hover{
+	transform: translate(0,-5px);
+	box-shadow: 3px 5px 30px rgba(0,0,0,0.3);
+}
+
+section.harga div.kotak h1{
+	text-align: center;
+	width: 100%;
+	position: relative;
+	margin-top: 30px;
+	font-size: 18px;
+	color: #4d1c84;
+}
+
+section.harga div.kotak div.harga{
+	width: 100%;
+	height: 80px;
+	position: relative;
+	margin-top: 20px;
+	background-color: #4d1c84;
+}
+
+section.harga div.kotak div.harga h1{
+	text-align: center;
+	width: 100%;
+	color: white;
+	font-family: calibri;
+	font-size: 25px;
+	padding-top: 10px;
+}
+
+section.harga div.kotak div.harga h2{
+	text-align: center;
+	width: 100%;
+	color: white;
+	font-family: calibri;
+	font-size: 22px;
+	top: -5px;
+	position: relative;
+}
+
+section.harga div.kotak p{
+	width: 80%;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	margin-top: 20px;
+	color: #373737;padding-bottom: 10px;
+}
+
+section.harga div.kotak p a{
+	padding: 12px 25px;
+	background-color: #4d1c84;
+	border-radius: 20px;
+	color: white;
+	font-size: 13px;
+	transition: 0.2s;
+}
+
+section.harga div.kotak p a:hover{
+	background-color: #0f054c;
+}
+
+section.testimoni{
+	width: 100%;
+	height: 800px;
+	margin-top: 50px;
+}
+
+section.testimoni div.isi{
+	width: 1200px;
+	height: 100%;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+section.testimoni div.isi h1.judul{
+	color: #0f054c;
+	font-family: calibri;
+	text-align: center;
+	width: 100%;
+	font-size: 25px;
+}
+
+section.testimoni div.isi div.kotak{
+	width: 370px;
+	height: auto;
+	background-color: white;
+	box-shadow: 1px 2px 20px rgba(0,0,0,0.3);
+	position: relative;
+	float: left;
+	margin: 15px;
+	padding: 30px;
+	box-sizing: border-box;
+	transition: 0.2s;
+}
+
+section.testimoni div.isi div.kotak:hover{
+	transform: translate(0,-3px);
+	box-shadow: 2px 5px 20px rgba(0,0,0,0.3);
+}
+
+section.testimoni div.isi div.kotak div.gambar{
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: #ddd;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-top: 10px;
+}
+
+section.testimoni div.isi div.kotak div.gambar img{
+	width: 100%;
+}
+
+section.testimoni div.isi div.kotak h1{
+	text-align: center;
+	width: 100%;
+	font-family: calibri;
+	margin-top: 15px;
+	color: #373737;
+}
+
+section.testimoni div.isi div.kotak p{
+	text-align: center;
+	color: #454545;
+}
+
+footer{
+	width: 100%;
+	height: 100px;
+	background-color: #0f054c;
+}
+
+footer p{
+	line-height: 100px;
+	color: white;
+}
+
+@media screen and (max-width: 1000px){
+	section.jumbotron div.menu div.list{
+		display: none;
+
+	}
+
+	section.menu{
+		display: none;
+		visibility: hidden;
+	}
+
+
+	section.jumbotron div.text{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 1320px){
+	section.jumbotron div.gambar img{
+		width: 450px;
+		top: 250px;
+	}
+
+	section.jumbotron div.gambar img{
+		top: 260px;
+		right: 50px;
+	}
+
+	section.jumbotron div.gambar img.gambar{
+		top: 260px;
+		right: 50px;
+	}
+
+	section.jumbotron div.text{
+		padding: 13%;
+		margin-top: 100px;
+		padding-left: 5%;
+		padding-right: 3%;
+	}
+
+	section.tentang div.gambar img{
+		left: 100px;
+	}
+
+	section.jumbotron div.text h1{
+		font-size: 40px;
+	}
+
+	section.jumbotron div.text h2{
+		font-size: 25px;
+		line-height: 20px;
+	}
+
+	section.jumbotron div.text p{
+		font-size: 16px;
+	}
+
+	section.jumbotron div.text a{
+		padding: 10px 14px;
+		font-size: 13px;
+		margin-left: 20px;
+	}
+
+	section.parallax p.more{
+		top: 45px;
+	}
+}
+@media screen and (max-width: 1200px){
+
+	section.jumbotron div.gambar img{
+		width: 400px;
+		top: 220px;
+	}
+
+	section.jumbotron div.gambar img.gambar{
+		top: 230px;
+	}
+
+	section.tentang div.text{
+		padding: 1%;
+		padding-top: 10%;
+	}
+
+	section.tentang div.text h1{
+		font-size: 30px;
+	}
+
+	section.tentang div.text h2{
+		font-size: 22px;
+	}
+
+	section.parallax h1{
+		font-size: 25px;
+		top: 120px;
+	}
+
+	section.parallax p{
+		font-size: 15px;
+	}
+
+	section.parallax p.more{
+		left: -80px;
+	}
+
+	section.parallax a{
+		font-size: 12px;
+	}
+
+	section.kelas div.isi{
+		width: 900px;
+		top: 50px;
+	}
+
+	section.kelas div.isi h1.judul{
+		font-size: 25px;
+	}
+
+	section.kelas div.isi div.kotak{
+		width: 270px;
+		height: auto;
+		padding-bottom: 40px;
+	}
+
+	section.kelas div.isi div.kotak h1{
+		font-size: 20px;
+	}
+
+	section.kelas div.isi div.kotak p{
+		width: 90%;
+		font-size: 14px;
+	}
+
+	section.harga div.kotak{
+		width: 250px;
+	}
+
+	section.harga div.kotak h1{
+		font-size: 16px;
+	}
+
+	section.harga div.kotak p{
+		font-size: 15px;
+	}
+
+	section.testimoni{
+		height: 700px;
+	}
+
+	section.testimoni div.isi{
+		width: 900px;
+	}
+
+	section.testimoni div.isi div.kotak{
+		width: 280px;
+		margin: 10px;
+		height: 300px;
+	}
+
+	section.testimoni div.isi div.kotak div.gambar{
+		width: 90px;
+		height: 90px;
+		margin-top: 0;
+	}
+
+	section.testimoni div.isi div.kotak h1{
+		font-size: 20px;
+		margin-top: 10px;
+	}
+
+	section.testimoni div.isi div.kotak p{
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	section.jumbotron div.gambar{
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	section.jumbotron div.gambar img{
+		position: absolute;
+		width: 50%;
+		top: 100px;
+	}
+
+	section.jumbotron div.gambar img.gambar{
+		position: absolute;
+		width: 50%;
+		top: 110px;
+	}
+
+	section.jumbotron div.text{
+		width: 100%;
+		padding: 10%;
+		padding-top: 30%;
+	}
+
+	section.jumbotron div.text h1{
+		font-size: 30px;
+	}
+
+	section.jumbotron div.text h2{
+		font-size: 22px;
+	}
+
+	section.jumbotron div.text a{
+		margin-left: 0;
+	}
+
+	section.tentang{
+		height: 1000px;
+	}
+
+	section.tentang div.text{
+		margin-top: 0;
+		width: 90%;
+		left: 0;
+		right: 0;
+		margin: auto;
+		bottom: 10px;
+	}
+
+	section.tentang div.gambar{
+		width: 100%;
+		height: 600px;
+	}
+
+	section.tentang div.gambar img{
+		width: 60%;
+	}
+
+	section.kelas{
+		height: 1000px;
+	}
+
+	section.kelas div.isi{
+		width: 90%;
+		left: 0;
+		right: 0;
+		margin: auto;
+		position: relative;
+	}
+
+	section.kelas div.isi div.kotak{
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	section.harga{
+		width: 100%;
+		height: 1300px;
+	}
+
+	section.harga div.kotak{
+		width: 90%;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%,0);
+	}
+
+	section.harga div.kotak:hover{
+		transform: translate(-50%,0);
+	}
+
+	section.harga img{
+		display: none;
+	}
+
+	section.testimoni {
+		height: auto;
+	}
+
+	footer{
+		display: none;
+	}
+
+	section.testimoni div.isi{
+		width: 90%;
+		position: relative;
+		box-sizing: border-box;
+	}
+
+	section.testimoni div.isi div.kotak{
+		width: 100%;
+		margin: 10px 0;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	section.tentang div.gambar img{
+		left: 0;
+	}
+
+	section.tentang div.text{
+		padding: 0;
+		padding-top: 70px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	section.jumbotron div.menu a h1.judul{
+		margin-left: 30px;
+	}
+
+	section.jumbotron div.gambar img{
+		width: 300px;
+	}
+
+	section.jumbotron div.gambar img.gambar{
+		width: 300px;
+	}
+
+	section.jumbotron div.text{
+		top: 50px;
+	}
+
+	section.jumbotron div.text h1{
+		font-size: 25px;
+	}
+
+	section.jumbotron div.text h2{
+		font-size: 18px;
+		margin-top: 5px;
+	}
+
+	section.jumbotron div.text p{
+		font-size: 14px;
+	}
+
+	section.jumbotron div.text a{
+		padding: 10px 13px;
+		font-size: 12px;
+	}
+
+	section.tentang div.gambar{
+		height: 300px;
+	}
+
+	section.tentang div.text{
+		padding-top: 0;
+	}
+
+	section.tentang div.text h1{
+		font-size: 22px;
+	}
+
+	section.tentang div.text h2{
+		font-size: 18px;
+		margin-top: 0;
+	}
+
+	section.tentang div.text p{
+		font-size: 15px;
+	}
+
+	section.tentang{
+		height: 600px;
+	}
+
+	section.parallax h1{
+		font-size: 18px;
+		top: 90px;
+	}
+
+	section.parallax p{
+		font-size: 14px;
+		top: 120px;
+	}
+
+	section.parallax p.more{
+		top: 60px;
+	}
+
+	section.parallax a{
+		font-size: 12px;
+		padding: 6px 14px;
+	}
+
+	section.harga{
+		height: 1500px;
+	}
+}
